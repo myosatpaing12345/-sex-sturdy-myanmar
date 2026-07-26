@@ -1,1 +1,15 @@
+require("dotenv").config();
 
+const { Telegraf } = require("telegraf");
+
+const bot = new Telegraf(process.env.BOT_TOKEN);
+
+bot.start((ctx) => {
+
+    ctx.reply("Hello! Welcome to SexSturdy Group Myanmar Bot ❤️");
+
+});
+
+bot.launch();
+
+console.log("Bot Running...");
